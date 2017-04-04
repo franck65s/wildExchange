@@ -1,0 +1,38 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "author": "Toto",
+      "Age": "18",
+      "email": "toto@gmail.com",
+      "GitHubLink": "http://github.com/Toto",
+      "LinkedinLink": "http://linkedin.com/TotoTata",
+      "Points": "150",
+      "MattermostName": "Jean Claude",
+      "promoId": 1,
+      "SignupDate": "01/01/2017",
+      "LastConnection": "10/10/2016",
+      "SchoolId": 1
+    },
+  ],
+  "Questions": [
+    {
+      "id": 1,
+      "title": "Je suis un titre",
+      "body": "Je suis une question",
+      "date": "10/10/2016",
+      "UsersID": 1,
+      "AnswerID": 1,
+      "postId": 1
+    }
+  ],
+  "Answers": [
+    {
+      "id": 1,
+      "Body": "Je suis une réponse",
+      "UsersID": 1,
+      "QuestionsID": 1,
+      "name": "Toto"
+    }
+  ]
+}
