@@ -1,0 +1,18 @@
+<button ng-click="$ctrl.getQuestion($ctrl.questions)">affichage question</button>
+
+
+<ol>
+    <li ng-repeat="question in $ctrl.result | limitTo:-4" id="liste">
+        <div id="titreQuestion">Titre de la question</div>
+        </br>
+        <div>{{question.titre | uppercase}}</div>
+        </br>
+        <div id="titreContenu">Contenu</div>
+        </br>
+        <div>{{question.body | uppercase}}</div>
+    </li>
+</ol>
+
+<button ng-click="">Répondre</button>
+
+
