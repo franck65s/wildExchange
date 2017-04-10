@@ -13,15 +13,10 @@ angular.module("questionComponent")
 
     controller: ['RecipesService', function (RecipesService) {
 
-      this.submit = () => {
-        var reponse = {
-          titre: this.title,
-          body: this.body
-        }
-        RecipesService.validate(reponse);
-      }
-
-
+     
+      this.$onInit = () => {
+        this.getQuestion();
+      };
 
       this.getQuestion = () => {
         var result = [];
@@ -31,11 +26,9 @@ angular.module("questionComponent")
           .catch((err) => { });
       };
 
+      // this.delete = () => {
+        // this.questions.splice(-1, 1);
 
-
-      this.delete = () => {
-        this.questions.splice(-1, 1);
-
-      }
+      // }
     }]
   });

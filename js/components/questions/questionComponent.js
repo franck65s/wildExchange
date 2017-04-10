@@ -20,22 +20,6 @@ angular.module("questionComponent", [])
         }
         RecipesService.validate(reponse);
       }
-
-
-
-      this.getQuestion = () => {
-        var result = [];
-        RecipesService.afficher().then((items) => {
-          this.result = items.data;
-        })
-          .catch((err) => { });
-      };
-
-
-
-      this.delete = () => {
-        this.questions.splice(-1, 1);
-
-      }
+      
     }]
   });
