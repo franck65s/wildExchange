@@ -1,0 +1,50 @@
+#liste{
+color: black;
+background-color: white;
+text-align: center;
+font-size: 30px;
+margin: 25px;
+border-radius: 10px;
+list-style-type: none; 
+border-width:1px;
+ border-style: dashed;
+ border-color:black;
+ font-family: Courier New ;
+ 
+}
+
+#titreQuestion{
+border-bottom-width:1px;
+ border-bottom-style: dashed;
+ border-bottom-color:black;
+ background-color: greenyellow;
+font-size: 20px;
+text-align: left;
+ 
+ 
+}
+#titreContenu{
+border-bottom-width:1px;
+ border-bottom-style: dashed;
+ border-bottom-color:black;
+ border-top-width:1px;
+ border-top-style: dashed;
+ border-top-color:black;
+ background-color: greenyellow;
+ font-size: 20px;
+ text-align: left;
+}
+#title{
+border-bottom-width:1px;
+ border-bottom-style: dashed;
+ border-bottom-color:black;
+ border-top-width:1px;
+ border-top-style: dashed;
+ border-top-color:black;
+ background-color: greenyellow;
+ font-size: 20px;
+ text-align: center;
+margin: 25px;
+}
+
+

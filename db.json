@@ -30,6 +30,41 @@
       "UsersID": 1,
       "AnswerID": 1,
       "postId": 1
+    },
+    {
+      "titre": "ijiopjp",
+      "body": "kpokop",
+      "id": 2
+    },
+    {
+      "titre": "ijiopjp",
+      "body": "kpokop",
+      "id": 3
+    },
+    {
+      "titre": "uiopuuip",
+      "body": "iopiopi",
+      "id": 4
+    },
+    {
+      "titre": "uiopuuip",
+      "body": "iopiopi",
+      "id": 5
+    },
+    {
+      "titre": "uiopuuip",
+      "body": "iopiopi",
+      "id": 6
+    },
+    {
+      "titre": "uiopuuip",
+      "body": "iopiopi",
+      "id": 7
+    },
+    {
+      "titre": "uiopuuip",
+      "body": "iopiopi",
+      "id": 8
     }
   ],
   "Answers": [
@@ -39,6 +74,46 @@
       "UsersID": 1,
       "QuestionsID": 1,
       "name": "Toto"
+    },
+    {
+      "id": 2,
+      "Body": "Je suis une réponse",
+      "UsersID": 1,
+      "QuestionsID": 1,
+      "name": "Toto"
+    },
+    {
+      "id": 3,
+      "Body": "Je suis une réponse",
+      "UsersID": 1,
+      "QuestionsID": 1,
+      "name": "Toto"
+    }
+  ],
+  "Tags": [
+    {
+      "id": 1,
+      "tag": "javascript"
+    },
+    {
+      "id": 2,
+      "tag": "nodejs"
+    },
+    {
+      "id": 3,
+      "tag": "php"
+    }
+  ],
+  "Tags_Questions": [
+    {
+      "id": 1,
+      "tagId": 3,
+      "questionID": 1
+    },
+    {
+      "id": 2,
+      "tagId": 2,
+      "questionID": 1
     }
   ]
 }
