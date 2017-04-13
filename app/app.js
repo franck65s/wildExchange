@@ -1,4 +1,9 @@
+'use strict';
 
-angular.module('app', [
-    
-    ]);
+
+angular.module('components', []); 
+angular.module('services', []); 
+
+angular.module('app', ['components', 'services']); 
+
+
