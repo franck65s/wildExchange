@@ -1,6 +1,6 @@
 
             <div class="container">
-                <h1>Login and Registration Form</h1>
+                <h1></h1>
 
             <section>				
                 <div id="container_demo" >
@@ -8,55 +8,55 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
-                                <h1>Log in</h1> 
+                            <form  autocomplete="on"> 
+                                <h1>Connexion</h1> 
                                 <p> 
-                                    <label for="username" class="uname" > Your email or username </label>
-                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                    <label for="username" class="uname"> Ton email </label>
+                                    <input  ng-model="$ctrl.userpost.name"  id="username" name="username" required="required" type="text" placeholder="mymail@mail.com"/>
                                 </p>
                                 <p> 
-                                    <label for="password" class="youpasswd"> Your password </label>
-                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                    <label for="password" class="youpasswd"> Ton mot de passe </label>
+                                    <input  ng-model="$ctrl.userpost.mdp" id="password" name="password" required="required" type="password"/> 
                                 </p>
                                 <p class="keeplogin"> 
 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
-									<label for="loginkeeping">Keep me logged in</label>
+									<label for="loginkeeping">Resté connecté</label>
 								</p>
                                 <p class="login button"> 
-                                    <input type="submit" value="Login" /> 
+                                    <input ng-model="$ctrl.userpost.login" type="submit" value="Connexion" /> 
 								</p>
                                 <p class="change_link">
-									Not a member yet ?
-									<a href="#toregister" class="to_register">Join us</a>
+									Pas encore membre ?
+									<a href="#toregister" class="to_register">Rejoins nous</a>
 								</p>
                             </form>
                         </div>
 
                         <div id="register" class="animate form">
-                            <form  action="mysuperscript.php" autocomplete="on"> 
-                                <h1> Sign up </h1> 
+                            <form   autocomplete="on"> 
+                                <h1> Inscris toi </h1> 
                                 <p> 
-                                    <label for="usernamesignup" class="uname" >Your username</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                    <label for="usernamesignup"class="uname" >Ton pseudo</label>
+                                    <input   ng-model="$ctrl.userpost.name"  id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="monsuperpseudo690" />
                                 </p>
                                 <p> 
-                                    <label for="emailsignup" class="youmail"  > Your email</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                    <label for="emailsignup" class="youmail"  > Ton email</label>
+                                    <input ng-model="$ctrl.userpost.mail" id="emailsignup" name="emailsignup" required="required" type="email" placeholder="monsupermail@mail.com"/> 
                                 </p>
                                 <p> 
-                                    <label for="passwordsignup" class="youpasswd" >Your password </label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <label for="passwordsignup" class="youpasswd" >Ton mot de passe </label>
+                                    <input  ng-model="$ctrl.userpost.mdp" id="passwordsignup" name="passwordsignup" required="required" type="password"/>
                                 </p>
                                 <p> 
-                                    <label for="passwordsignup_confirm" class="youpasswd" >Please confirm your password </label>
-                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                    <label for="passwordsignup_confirm" lass="youpasswd" >Confirme ton mot de passe </label>
+                                    <input  ng-model="$ctrl.userpost.mdp" cid="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password"/>
                                 </p>
                                 <p class="signin button"> 
-									<input type="submit" value="Sign up"/> 
+									<input ng-click="$ctrl.postReg()" type="submit" value="Inscription"/> 
 								</p>
                                 <p class="change_link">  
-									Already a member ?
-									<a href="#tologin" class="to_register"> Go and log in </a>
+									Déjà membre ?
+									<a href="#tologin" class="to_register"> Connecte toi </a>
 								</p>
                             </form>
                         </div>

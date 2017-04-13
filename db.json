@@ -14,6 +14,12 @@
       "LastConnection": "10/10/2016",
       "SchoolId": 1
     },
+    {
+      "name": "toto",
+      "mail": "toto@gmail.com",
+      "mdp": "toto",
+      "id": 2
+    }
   ],
   "Questions": [
     {
