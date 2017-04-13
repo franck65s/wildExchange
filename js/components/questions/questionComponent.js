@@ -16,7 +16,9 @@ angular.module("questionComponent", [])
       this.submit = () => {
         var reponse = {
           titre: this.title,
-          body: this.body
+          body: this.body,
+          newDate : new Date()
+
         }
         RecipesService.validate(reponse);
       }

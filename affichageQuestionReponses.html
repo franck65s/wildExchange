@@ -1,0 +1,22 @@
+<ol>
+    <li ng-repeat="questionsReponse in $ctrl.result | limitTo:-4" id="liste">
+        <div id="titreQuestion">Titre de la question</div>
+        </br>
+        <div>{{questionsReponse.titre | uppercase}}</div>
+        </br>
+        <div id="titreContenu">Contenu</div>
+        </br>
+        <div>{{questionsReponse.body}}</div>
+        </br>
+        <div id="titreContenu">réponse</div>
+        </br>
+        <ol>
+            <li ng-repeat="Answer in questionsReponse.Answers"id="titreQuestion">
+               
+                <div> {{Answer.body}}</div>
+            </li>
+        </ol>
+    </li>
+
+</ol>
+

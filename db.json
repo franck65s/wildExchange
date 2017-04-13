@@ -18,69 +18,45 @@
   "Questions": [
     {
       "id": 1,
-      "title": "Je suis un titre",
-      "body": "Je suis une question",
+      "titre": "utiliser AngularJS",
+      "body": "Faut il un Ordinateur?",
       "date": "10/10/2016",
-      "UsersID": 1,
-      "AnswerID": 1,
+      "UsersId": 1,
       "postId": 1
     },
     {
-      "titre": "ijiopjp",
-      "body": "kpokop",
+      "titre": "Utiliser un ordinateur",
+      "body": "Faut il Angularjs?",
       "id": 2
-    },
-    {
-      "titre": "ijiopjp",
-      "body": "kpokop",
-      "id": 3
-    },
-    {
-      "titre": "uiopuuip",
-      "body": "iopiopi",
-      "id": 4
-    },
-    {
-      "titre": "uiopuuip",
-      "body": "iopiopi",
-      "id": 5
-    },
-    {
-      "titre": "uiopuuip",
-      "body": "iopiopi",
-      "id": 6
-    },
-    {
-      "titre": "uiopuuip",
-      "body": "iopiopi",
-      "id": 7
-    },
-    {
-      "titre": "uiopuuip",
-      "body": "iopiopi",
-      "id": 8
-    }
+    }  
   ],
   "Answers": [
     {
       "id": 1,
-      "Body": "Je suis une réponse",
-      "UsersID": 1,
-      "QuestionsID": 1,
+      "body": "Non il suffit d'avoir un boulier",
+      "UsersId": 1,
+      "QuestionId": 1,
       "name": "Toto"
     },
     {
       "id": 2,
-      "Body": "Je suis une réponse",
-      "UsersID": 1,
-      "QuestionsID": 1,
+      "body": "Ou bien un saladier en cuivre",
+      "UsersId": 1,
+      "QuestionId": 1,
       "name": "Toto"
     },
     {
       "id": 3,
-      "Body": "Je suis une réponse",
-      "UsersID": 1,
-      "QuestionsID": 1,
+      "body": "Cela dépend de ton fuseau horaire",
+      "UsersId": 1,
+      "QuestionId": 2,
+      "name": "Toto"
+    },
+    {
+      "id": 4,
+      "body": "et si tu lave tes chaussettes en machine les jours impairs",
+      "UsersId": 1,
+      "QuestionId": 2,
       "name": "Toto"
     }
   ],
