@@ -1,0 +1,198 @@
+.header-search{
+	background-color:white;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+}
+
+.header-search .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+
+/* Logo */
+
+.header-search .header-limiter h1 {
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-search .header-limiter h1 span {
+	color: #5383d3;
+}
+
+/* The header links */
+
+.header-search .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-search .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0 0 0 60px;
+	padding: 0;
+}
+
+.header-search .header-limiter nav a {
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #fba858;
+	font-size: 16px;
+	font-weight: normal;
+	opacity: 0.9;
+}
+
+.header-search .header-limiter nav a:hover {
+	opacity: 1;
+}
+
+.header-search .header-limiter nav a.selected {
+	color: #fba858;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* The search box */
+
+.header-search .header-limiter form {
+	float:left;
+	position: relative;
+	left: 30px;
+	margin-left: 40px;
+	border-radius: 3px;
+	background-color:  #fba858;
+	width: 44px;
+	height: 39px;
+	cursor: pointer;
+
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* CSS search icon */
+
+.header-search .header-limiter form:before {
+	position: absolute;
+	content: '';
+	border-radius: 50%;
+	border: 2px solid #fff;
+	width: 9px;
+	height: 9px;
+	top: 12px;
+	left: 14px;
+}
+
+.header-search .header-limiter form:after {
+	position: absolute;
+	content: '';
+	background-color: #fff;
+	width: 2px;
+	height: 8px;
+	top: 22px;
+	left: 26px;
+	-webkit-transform: rotate(-44deg);
+	-moz-transform: rotate(-44deg);
+	transform: rotate(-44deg);
+}
+
+/* The search box */
+
+.header-search .header-limiter form input {
+	display: none;
+	position: absolute;
+	color: #fba858;
+	border: 2px solid #fba858;
+	left: 42px;
+	padding: 11px 12px 9px;
+	width: 210px;
+	border-radius: 2px 0 0 2px;
+	height: 39px;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Login/Sign up buttons */
+
+.header-search .header-limiter ul {
+	float: left;
+    margin: 0;
+	font: 14px Arial, Helvetica, sans-serif;
+	list-style: none;
+	line-height: 1;
+	float: right;
+}
+
+.header-search .header-limiter ul li {
+	display: inline-block;
+	margin-left: 15px;
+	opacity:0.9;
+}
+
+.header-search .header-limiter ul li:hover{
+	opacity: 1;
+}
+
+/* The sign up button */
+
+.header-search .header-limiter ul li:last-child a {
+	font-weight: bold;
+	background-color: #fba858;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+
+.header-search .header-limiter ul li:first-child a {
+	font-weight: bold;
+	background-color: #fba858;
+	padding: 10px 15px;
+	border-radius: 3px;
+	margin: 0,20px;
+	box-shadow: 0px 5px 0px #d69c66;
+	#d69c66
+}
+
+/* Making the header responsive. */
+
+@media all and (max-width: 600px) {
+
+	.header-search {
+		padding: 15px;
+		position: relative;
+	}
+
+	.header-search .header-limiter h1 {
+		float:none;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-search .header-limiter nav {
+		text-align: center;
+		float: none;
+		margin: 0;
+	}
+
+	.header-search .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	.header-search .header-limiter form {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+}

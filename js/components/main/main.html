@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Search Header</title>
+
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="header-basic-light.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+
+<header class="header-search">
+
+	<div class="header-limiter">
+
+		<h1><a href="#"><img src="../../../assets/img/logo_orange_pastille.png" alt="Logo_wild" height="42" width="42"></a></h1>
+
+		<form method="get" action="#">
+			<input type="search" placeholder="Search!" name="search">
+		</form>
+
+		<nav>
+			<a href="#">Jobs</a>
+			<a href="#">Documentations</a>
+			<a href="#">Users</a>
+
+					<ul>
+			<li><a href="#"><font color= "white">Ask question</font></a></li>
+			<li><a href="#"><font color= #fba858>Login</font></a></li>
+			<li><a href="#"><font color= "white">Sign up</font></a></li>
+		</ul>
+
+		</nav>
+
+	
+
+
+	
+
+		
+
+		
+
+	</div>
+
+</header>
+
+<!-- script search -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function() {
+
+		$('.header-search form').on('click', function(e) {
+
+			if(e.target == this) {
+				$(this).find('input').toggle();
+			}
+
+		});
+	});
+
+</script>
+
+</body>
+
+</html>
