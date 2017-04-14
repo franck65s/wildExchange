@@ -5,11 +5,67 @@
   <meta charset="utf-8" />
   <title>wildexchange</title>
   <link href="assets/css/planning.css" rel="stylesheet" type="text/css" />
-
+  <link rel="stylesheet" href="js/components/main/index.css">
+  <link rel="stylesheet" href="js/components/main/header-basic-light.css">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+  <header class="header-search">
 
+    <div class="header-limiter">
+
+      <h1>
+        <a href="http://localhost:8080/"><img src="../../../assets/img/logo_orange_pastille.png" alt="Logo_wild" height="42" width="42"></a>
+      </h1>
+
+      <form method="get" action="#">
+        <input type="search" placeholder="Search!" name="search">
+      </form>
+
+      <nav>
+        <a href="#">Jobs</a>
+        <a href="#">Documentations</a>
+        <a href="#">Users</a>
+
+        <ul>
+          <li>
+            <a href="http://localhost:8080/pageFormulaireQuestion.html">
+              <font color="white">Ask question</font>
+            </a>
+          </li>
+          <li>
+            <a href="http://localhost:8080/indexR">
+              <font color=# fba858>Login</font>
+            </a>
+          </li>
+          <li>
+            <a href="http://localhost:8080/indexR#toregister">
+              <font color="white">Sign up</font>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- script search -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('.header-search form').on('click', function (e) {
+
+        if (e.target == this) {
+          $(this).find('input').toggle();
+        }
+
+      });
+    });
+
+  </script>
 
 
   <create-q></create-q>

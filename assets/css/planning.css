@@ -17,7 +17,7 @@ border-width:1px;
 border-bottom-width:1px;
  border-bottom-style: dashed;
  border-bottom-color:black;
- background-color: greenyellow;
+ background-color: #DCDCDC;
 font-size: 20px;
 text-align: left;
  
@@ -30,7 +30,7 @@ border-bottom-width:1px;
  border-top-width:1px;
  border-top-style: dashed;
  border-top-color:black;
- background-color: greenyellow;
+ background-color:#fba858;
  font-size: 20px;
  text-align: left;
 }
@@ -41,10 +41,13 @@ border-bottom-width:1px;
  border-top-width:1px;
  border-top-style: dashed;
  border-top-color:black;
- background-color: greenyellow;
+ background-color: #fba858;
  font-size: 20px;
  text-align: center;
 margin: 25px;
 }
+#textQuestion{
+width: 200px;
 
+}
 
