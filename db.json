@@ -27,41 +27,48 @@
       "titre": "utiliser AngularJS",
       "body": "Faut il un Ordinateur?",
       "date": "10/10/2016",
-      "UsersId": 1,
+      "UserId": 1,
       "postId": 1
     },
     {
       "titre": "Utiliser un ordinateur",
       "body": "Faut il Angularjs?",
+      "UserId": 1,
       "id": 2
-    }  
+    },
+    {
+      "titre": "redo",
+      "body": "pipo",
+      "newDate": "2017-04-13T08:48:39.445Z",
+      "id": 3
+    }
   ],
   "Answers": [
     {
       "id": 1,
       "body": "Non il suffit d'avoir un boulier",
-      "UsersId": 1,
+      "UserId": 1,
       "QuestionId": 1,
       "name": "Toto"
     },
     {
       "id": 2,
       "body": "Ou bien un saladier en cuivre",
-      "UsersId": 1,
+      "UserId": 1,
       "QuestionId": 1,
       "name": "Toto"
     },
     {
       "id": 3,
       "body": "Cela dépend de ton fuseau horaire",
-      "UsersId": 1,
+      "UserId": 1,
       "QuestionId": 2,
       "name": "Toto"
     },
     {
       "id": 4,
       "body": "et si tu lave tes chaussettes en machine les jours impairs",
-      "UsersId": 1,
+      "UserId": 1,
       "QuestionId": 2,
       "name": "Toto"
     }
