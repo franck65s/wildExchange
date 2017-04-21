@@ -11,7 +11,8 @@
       "promoId": 1,
       "SignupDate": "01/01/2017",
       "LastConnection": "10/10/2016",
-      "SchoolId": 1
+      "SchoolId": 1,
+      "tokenSecure": 1742.464326936973
     },
     {
       "name": "toto",
