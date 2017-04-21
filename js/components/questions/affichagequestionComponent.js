@@ -1,11 +1,10 @@
-
 'use strict';
 
-angular.module("questionComponent")
+angular.module("components")
 
 
   .component("affichageQuestion", {
-    templateUrl: "affichageQuestion.html",
+    templateUrl: "js/components/questions/afficheQuestionId.html",
 
     bindings: {
       questions: '<'
@@ -13,7 +12,7 @@ angular.module("questionComponent")
 
     controller: ['RecipesService', function (RecipesService) {
 
-     
+
       this.$onInit = () => {
         this.getQuestion();
       };
@@ -21,13 +20,13 @@ angular.module("questionComponent")
       this.getQuestion = () => {
         var result = [];
         RecipesService.afficher().then((items) => {
-          this.result = items.data;
-        })
-          .catch((err) => { });
+            this.result = items.data;
+          })
+          .catch((err) => {});
       };
 
       // this.delete = () => {
-        // this.questions.splice(-1, 1);
+      // this.questions.splice(-1, 1);
 
       // }
     }]

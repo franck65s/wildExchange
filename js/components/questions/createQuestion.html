@@ -1,0 +1,15 @@
+<div id="title">
+    <div>
+        <h1>Titre</h1>
+        <input ng-model="$ctrl.title" type="text" class="form-control" id="" placeholder="title">
+    </div>
+
+    <div>
+        <h1>Contenu</h1>
+        <textarea ng-model="$ctrl.body" type="text" class="form-control" id="textQuestion" placeholder="bodyQ"></textarea>
+    </div>
+
+    <button ng-click="$ctrl.submit($ctrl.questions)"ui-sref="home" ng-disabled="!$ctrl.title || !$ctrl.body">valider</button>
+
+
+</div>

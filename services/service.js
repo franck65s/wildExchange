@@ -3,7 +3,7 @@
 
 const API_URL = "http://localhost:3000/Questions";
 
-angular.module('recipes.services', [])
+angular.module('services')
 
   .service('RecipesService', ['$http', function ($http) {
 

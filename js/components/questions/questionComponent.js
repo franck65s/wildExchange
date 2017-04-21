@@ -1,27 +1,25 @@
-
 'use strict';
 
-angular.module("questionComponent", [])
+angular.module("components")
 
 
   .component("createQ", {
-    templateUrl: "createQuestion.html",
-
-    bindings: {
-      questions: '<'
-    },
+    templateUrl: "js/components/questions/createQuestion.html",
 
     controller: ['RecipesService', function (RecipesService) {
+      this.$onInit = () => {
+       
+      };
 
       this.submit = () => {
         var reponse = {
           titre: this.title,
           body: this.body,
-          newDate : new Date()
+          newDate: new Date()
 
         }
         RecipesService.validate(reponse);
-      }
-      
+      };
+
     }]
   });

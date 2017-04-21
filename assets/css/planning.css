@@ -23,6 +23,17 @@ text-align: left;
  
  
 }
+#repondre{
+border-bottom-width:1px;
+ border-bottom-style: dashed;
+ border-bottom-color:black;
+ border-top-width:1px;
+ border-top-style: dashed;
+ border-top-color:black;
+ background-color: lightgrey;
+ font-size: 20px;
+ text-align: right;
+}
 #titreContenu{
 border-bottom-width:1px;
  border-bottom-style: dashed;

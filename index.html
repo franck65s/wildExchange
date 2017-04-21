@@ -3,43 +3,50 @@
 
 <head>
 
-  <meta charset="utf-8" />
-  <title>wildexchange</title>
-  <link href="assets/css/planning.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8" />
+	<title>wildexchange</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+	    crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	    crossorigin="anonymous"></script>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/planning.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="js/components/main/index.css">
 	<link rel="stylesheet" href="js/components/main/header-basic-light.css">
 	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+
 </head>
 
 <body>
 	<header class="header-search">
 		<div class="header-limiter">
-
 			<h1>
-				<a href="http://localhost:8080/"><img src="../../../assets/img/logo_orange_pastille.png" alt="Logo_wild" height="42" width="42"></a>
+				<a ui-sref="home"><img src="../../../assets/img/logo_orange_pastille.png" alt="Logo_wild" height="42" width="42"></a>
 			</h1>
 			<form method="get" action="#">
 				<input type="search" placeholder="Search!" name="search">
 			</form>
-
 			<nav>
 				<a href="#">Jobs</a>
 				<a href="#">Documentations</a>
 				<a href="#">Users</a>
-
 				<ul>
 					<li>
-						<a href="http://localhost:8080/pageFormulaireQuestion.html">
+						<a ui-sref="formulaireQuestion">
 							<font color="white">Ask question</font>
 						</a>
 					</li>
 					<li>
-						<a href="http://localhost:8080/indexR">
+						<a ui-sref="register">
 							<font color=# fba858>Login</font>
 						</a>
 					</li>
 					<li>
-						<a href="http://localhost:8080/indexR#toregister">
+						<a ui-sref="register">
 							<font color="white">Sign up</font>
 						</a>
 					</li>
@@ -49,8 +56,14 @@
 
 	</header>
 
+
+	<ui-view></ui-view>
+
+
+
+
 	<!-- script search -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 	<script>
 		$(document).ready(function () {
 
@@ -62,20 +75,31 @@
 
 			});
 		});
-
 	</script>
-  <affichage-qr></affichage-qr>
+	<!--se met tout le temps dans la page ou on veut mettre la route-->
+
+	
 
 
 
+	<script src="app/app.js"></script>
+	<script src="js/components/user/registration/registration.js"></script>
+	<script src="services/regService.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
-  <script src="app.js"></script>
-  <script src="js/components/questions/questionComponent.js"></script>
-  <script src="services/service.js"></script>
-  <script src="js/components/questions/affichagequestionComponent.js"></script>
-  <script src="js/components/questions/affichagequestionReponsesComponent.js"></script>
-  <script src="services/serviceQuestionReponses.js"></script>
+	<script src="js/routes.js"></script>
+
+	<script src="services/service.js"></script>
+	<script src="services/serviceQuestionReponses.js"></script>
+	<script src="services/AnswerService.js"></script>
+
+	<script src="js/components/index.js"></script>
+	<script src="js/components/questions/affichagequestionComponent.js"></script>
+	<script src="js/components/questions/affichagequestionPourReponse.js"></script>
+	<script src="js/components/questions/affichagequestionReponsesComponent.js"></script>
+	<script src="js/components/questions/questionComponent.js"></script>
+	<script src="js/components/answers/answerComponent.js"></script>
+
+
 </body>
 
 </html>
