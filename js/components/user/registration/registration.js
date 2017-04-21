@@ -1,6 +1,6 @@
 angular.module('components').component("registration", {
 
-    templateUrl: './js/components/user/registration/registration.html',
+    templateUrl: '/js/components/user/registration/registration.html',
 
     bindings: {
 

@@ -1,0 +1,25 @@
+<ol>
+    <li ng-repeat="questionsReponse in $ctrl.result" id="liste">
+        <div id="titreQuestion">&nbsp;&nbsp;Question posée le {{questionsReponse.newDate | date : format : timezone}} </div>
+        </br>
+        <div>{{questionsReponse.titre | uppercase}}</div>
+        </br>
+        <div id="titreContenu">Contenu</div>
+
+        </br>
+        <div>{{questionsReponse.body}}
+            <div id="repondre"> <input type="button" value="REPONDRE" ui-sref="afficheQuestion({id : questionsReponse.id})"></div>
+        </div>
+        </br>
+
+        <div id="titreContenu">réponse</div>
+        </br>
+        <ol>
+            <li ng-repeat="Answer in questionsReponse.Answers" id="titreQuestion">
+
+                <div> {{Answer.body}}</div>
+            </li>
+        </ol>
+    </li>
+
+</ol>
