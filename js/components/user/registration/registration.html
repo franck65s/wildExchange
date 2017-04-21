@@ -8,22 +8,22 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  autocomplete="on"> 
+                            <form ng-show="!$ctrl.cookieUser" autocomplete="on"> 
                                 <h1>Connexion</h1> 
                                 <p> 
-                                    <label for="username" class="uname"> Ton email </label>
-                                    <input  ng-model="$ctrl.userpost.name"  id="username" name="username" required="required" type="text" placeholder="mymail@mail.com"/>
+                                    <label for="username" class="uname"> Ton pseudo </label>
+                                    <input  ng-model="$ctrl.connexion.user"  id="username" name="username" required="required" type="text" placeholder="mymail@mail.com"/>
                                 </p>
                                 <p> 
                                     <label for="password" class="youpasswd"> Ton mot de passe </label>
-                                    <input  ng-model="$ctrl.userpost.mdp" id="password" name="password" required="required" type="password"/> 
+                                    <input  ng-model="$ctrl.connexion.mdp"  id="password" name="password" required="required" type="password"/> 
                                 </p>
                                 <p class="keeplogin"> 
 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
 									<label for="loginkeeping">Resté connecté</label>
 								</p>
                                 <p class="login button"> 
-                                    <input ng-model="$ctrl.userpost.login" type="submit" value="Connexion" /> 
+                                    <input ng-click="$ctrl.connection($ctrl.connexion.user,$ctrl.connexion.mdp)" type="submit" value="Connexion" /> 
 								</p>
                                 <p class="change_link">
 									Pas encore membre ?

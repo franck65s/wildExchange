@@ -7,5 +7,7 @@ angular.module('services', []);
 angular.module('app', [
     "ui.router",
     "components",
-    "services"
+    "services",
+    "ngCookies"
 ]);
+
