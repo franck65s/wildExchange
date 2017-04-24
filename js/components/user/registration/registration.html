@@ -12,7 +12,7 @@
                                 <h1>Connexion</h1> 
                                 <p> 
                                     <label for="username" class="uname"> Ton pseudo </label>
-                                    <input  ng-model="$ctrl.connexion.user"  id="username" name="username" required="required" type="text" placeholder="mymail@mail.com"/>
+                                    <input  ng-model="$ctrl.connexion.user"  id="username" name="username" required="required" type="text" placeholder="monSuperPseudo"/>
                                 </p>
                                 <p> 
                                     <label for="password" class="youpasswd"> Ton mot de passe </label>
@@ -27,7 +27,7 @@
 								</p>
                                 <p class="change_link">
 									Pas encore membre ?
-									<a href="#toregister" class="to_register">Rejoins nous</a>
+									<a ui-sref="inscription" class="to_register">Rejoins nous</a>
 								</p>
                             </form>
                         </div>

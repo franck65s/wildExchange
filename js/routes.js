@@ -1,12 +1,48 @@
-angular.module("app")
+'use strict';
 
-    .config(function ($stateProvider, $urlRouterProvider) {
+angular.module('app')
+    .config(function ($stateProvider, signServiceProvider, $windowProvider) {
+        var $window = $windowProvider.$get();
+        var $cookies;
+        angular.injector(['ngCookies']).invoke(['$cookies', function (_$cookies_) {
+            $cookies = _$cookies_;
+        }]);
+        function VerificationConnection(userid, token) {
+            if (!userid) {
+                DeleteCookie();
+            }
+            if (!token) {
+                DeleteCookie();
+            }
+            signServiceProvider.$get().verifToken(userid, token).then((response) => {
+                if (response.data['0'].tokenSecure != token && response.data['0'].id != userid) {
+                    DeleteCookie();
+
+                }
+
+            }).catch((response) => {
+                DeleteCookie();
+            });
+        }
+
+        function DeleteCookie() {
+            $cookies.remove('id');
+            $cookies.remove('tokenSecure');
+            $window.location.href = '/#!/index';
+
+        };
 
         $stateProvider
             .state({
                 name: "formulaireQuestion",
                 url: "/createQ",
-                component: "createQ"
+                component: "createQ",
+                resolve: {
+                    login: function ($cookies) {
+                        VerificationConnection($cookies.get('id'), $cookies.get('tokenSecure'));
+                    }
+                }
+
             })
             .state({
                 name: "home",
@@ -22,17 +58,22 @@ angular.module("app")
                 }
             })
             .state({
-                name: "register",
-                url: "/register",
-                component: "registration"
+                name: "index",
+                url: "/index",
+                component: "index"
+            })
+            .state({
+                name: "inscription",
+                url: "/inscription",
+                component: "inscription"
             })
             .state({
                 name: 'afficheQuestion',
                 url: '/affiche/:id',
                 component: 'affichageReponse',
                 resolve: {
-                    reponses: function (RecipesQR, $stateParams) {
-                        return RecipesQR.afficher($stateParams.id);
+                    reponses: function ($stateParams,$rootScope) {
+                      $rootScope.idQuestion = $stateParams.id;
                     }
                 }
             });

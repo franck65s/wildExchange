@@ -10,13 +10,15 @@ angular.module('services')
 
     this.afficher = (questionsReponses) => {
       return $http.get(URL)
-
     };
 
-    // this.afficherId = (id) => {
-    //   return $http.get(URL/id)
+    this.afficherId = (id) => {
+      return $http.get('http://localhost:3000/Questions/'+ id)
+    };
 
-    // };
+    this.reponseId = (id) => {
+      return $http.get('http://localhost:3000/Questions/'+ id +'?_embed=Answers')
+    };
 
 
   }]);

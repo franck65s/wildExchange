@@ -1,0 +1,43 @@
+
+            <div class="container">
+                <h1></h1>
+
+            <section>				
+                <div id="container_demo" >
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form   autocomplete="on"> 
+                                <h1> Inscris toi </h1> 
+                                <p> 
+                                    <label for="usernamesignup"class="uname" >Ton pseudo</label>
+                                    <input   ng-model="$ctrl.userpost.name"  id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="monsuperpseudo690" />
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail"  > Ton email</label>
+                                    <input ng-model="$ctrl.userpost.mail" id="emailsignup" name="emailsignup" required="required" type="email" placeholder="monsupermail@mail.com"/> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" >Ton mot de passe </label>
+                                    <input  ng-model="$ctrl.userpost.mdp" id="passwordsignup" name="passwordsignup" required="required" type="password"/>
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" lass="youpasswd" >Confirme ton mot de passe </label>
+                                    <input  ng-model="$ctrl.userpost.mdp" cid="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password"/>
+                                </p>
+                                <p class="signin button"> 
+									<input ng-click="$ctrl.postReg()" type="submit" value="Inscription"/> 
+								</p>
+                                <p class="change_link">  
+									Déjà membre ?
+									<a ui-sref="index" class="to_register"> Connecte toi </a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+

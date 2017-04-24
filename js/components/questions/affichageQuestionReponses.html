@@ -4,22 +4,8 @@
         </br>
         <div>{{questionsReponse.titre | uppercase}}</div>
         </br>
-        <div id="titreContenu">Contenu</div>
-
-        </br>
-        <div>{{questionsReponse.body}}
-            <div id="repondre"> <input type="button" value="REPONDRE" ui-sref="afficheQuestion({id : questionsReponse.id})"></div>
-        </div>
-        </br>
-
-        <div id="titreContenu">réponse</div>
-        </br>
-        <ol>
-            <li ng-repeat="Answer in questionsReponse.Answers" id="titreQuestion">
-
-                <div> {{Answer.body}}</div>
-            </li>
-        </ol>
+        <center>  <div id="repondre"> <input type="button" value="voir" ui-sref="afficheQuestion({id : questionsReponse.id})"></div>
+      
     </li>
 
 </ol>
