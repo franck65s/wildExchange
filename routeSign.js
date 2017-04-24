@@ -1,35 +1,4 @@
-'use strict';
 
-angular.module('app') 
-.config(function ($stateProvider, UsersServiceProvider, $windowProvider) {
-    var $window = $windowProvider.$get();
-    var $cookies;
-    angular.injector(['ngCookies']).invoke(['$cookies', function (_$cookies_) {
-        $cookies = _$cookies_;
-    }]);
-    function VerificationConnection(userid, token) {
-        if (!userid) {
-            DeleteCookie();
-        }
-        if (!token) {
-            DeleteCookie();
-        }
-        UsersServiceProvider.$get().verifToken(userid, token).then((response) => {
-            if (response.data['0'].tokenSecure != token && response.data['0'].id != userid) {
-                DeleteCookie();
-
-            }
-
-        }).catch((response) => {
-            DeleteCookie();
-        });
-    }
-
-    function DeleteCookie() { 
-        $cookies.remove('id');
-        $cookies.remove('tokenSecure');
-        $window.location.href = '/';
-    };
     $stateProvider
         .state('home', {
             url: '',

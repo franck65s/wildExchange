@@ -1,91 +1,32 @@
-angular.module('components').component("sign", {
+angular.module('components').component("inscription", {
 
-    templateUrl: './js/components/user/registration/registration.html',
+    templateUrl: './js/components/user/sign/sign.html',
 
     bindings: {
 
         user: '<',
-        error: '@',
-        cookieUser: '<',
-        cookieToken: '<',
-        msgVerifToken: '<'
+        error: '@'
 
     },
 
-    controller: ['signService', '$cookies','$location', function (signService, $cookies, $location) {
-        var self = this;
+    controller: ['reg','$window', function (reg,$window) {
 
-    this.$onInit = () => {
-      this.cookieUser = $cookies.get('id');
-      this.cookieToken = $cookies.get('tokenSecure'); 
-      console.log(this.cookieUser, this.cookieToken);
-      VerificationConnection(this.cookieUser, this.cookieToken);
-    }
 
-    this.connection = (email, mdp) => { 
-      signService.userConnect(email, mdp).then((response) => { 
-        self.user = response.data; 
-        SendCookie(response.data["0"].id); 
-      }).catch((response) => {
-        self.error = response.statusText || "une erreur s'est produite pendant l'identification"; 
-      });
-    }
+        this.postReg = () => {
+            this.add = {
+                name: this.userpost.name,
+                mail: this.userpost.mail,
+                mdp: this.userpost.mdp
+            }
+            reg.userPost(this.add).then((response) => {
 
-    function SendCookie(id) { 
-      $cookies.put('id', '' + id + ''); 
-      generatToken(id)
-      self.cookieUser = $cookies.get('id'); 
-    };
+               $window.location.href = '/#!/index';
 
-    function DeleteCookie() { 
-      $cookies.remove('id');
-      $cookies.remove('tokenSecure');
-      $location.path("/index");
-    };
 
-    function generatToken(id) {
-      self.tokenid = RandomTocken(); 
-      var add = { 
-        tokenSecure: self.tokenid 
-      };
-      
-      signService.userTokenAdd(id, add).then((response) => { 
-        $cookies.put('tokenSecure', '' + self.tokenid + ''); 
-        self.cookieToken = $cookies.get(self.tokenid); 
-      }).catch((response) => {
-        self.error = response.statusText || "une erreur s'est produite pendant l'identification"; 
-      });
-      
+            }).catch((response) => {
 
-    };
-
-    function RandomTocken() { 
-      return (Math.random() * 6000); 
-    };
-
-    function VerificationConnection(userid, token) { 
-      if (!userid) {
-         $location.path("/index");
-        DeleteCookie();
-      }
-      if (!token) {
-         $location.path("/index");
-        DeleteCookie();
-      }
-      console.log(token);
-      signService.verifToken(userid, token).then((response) => {
-        if (response.data['0'].tokenSecure != token && response.data['0'].id != userid) {
-          DeleteCookie();
-           $location.path("/index");
+                this.error = response.statusText || "une erreur s'est produite";
+            });
         }
-
-      }).catch((response) => {
-         $location.path("/index");
-        DeleteCookie();
-      });
-
-
-    };
-  }]
-
+    }]
 });
