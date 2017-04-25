@@ -3,9 +3,20 @@
         <div id="titreQuestion">&nbsp;&nbsp;Question posée le {{questionsReponse.newDate | date : format : timezone}} </div>
         </br>
         <div>{{questionsReponse.titre | uppercase}}</div>
+        <div id="titreQuestion">Objet de la Question </div>
         </br>
-        <center>  <div id="repondre"> <input type="button" value="voir" ui-sref="afficheQuestion({id : questionsReponse.id})"></div>
-      
+        <div>{{questionsReponse.body }}</div>
+        </br>
+        <center>
+            <div id="repondre"> <input type="button" value="voir" ui-sref="afficheQuestion({id : questionsReponse.id})"></div>
+
+            <ol>
+                <li ng-repeat="Answer in questionsReponse.Answers" id="titreQuestion">
+
+                    <div> {{Answer.body}}</div>
+                </li>
+            </ol>
+
     </li>
 
 </ol>
