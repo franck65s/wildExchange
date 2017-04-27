@@ -15,7 +15,8 @@
       "signupDate": "01/01/2017",
       "lastConnection": "10/04/2017",
       "schoolId": 1,
-      "tokenSecure": 937.2075731362148
+      "mdp":"toto",
+      "tokenSecure": 4648646
     },
     {
       "id": 2,
@@ -32,34 +33,7 @@
       "signupDate": "01/02/2017",
       "lastConnection": "10/04/2017",
       "schoolId": 1
-    },
-    {
-      "name": "franck",
-      "mail": "franck@gmail.com",
-      "mdp": "cyclope",
-      "id": 3,
-      "tokenSecure": 911.9604102045508
-    },
-    {
-      "name": "Julien",
-      "mail": "julien@gmail.COM",
-      "mdp": "julien",
-      "id": 4
-    },
-    {
-      "name": "estelle",
-      "mail": "estelle@gmail.com",
-      "mdp": "toto",
-      "id": 5,
-      "tokenSecure": 483.8066622621846
-    },
-    {
-      "username": "franck",
-      "mail": "franck@gmail.com",
-      "mdp": "cyclope",
-      "id": 6,
-      "tokenSecure": 4617.588718151188
-    }
+    }   
   ],
   "Questions": [
     {
@@ -82,12 +56,6 @@
       "newDate": "2017-04-24T14:56:59.654Z",
       "id": 3,
       "userId": 1
-    },
-    {
-      "titre": "testo",
-      "body": "red",
-      "newDate": "2017-04-27T07:36:08.769Z",
-      "id": 4
     }
   ],
   "Answers": [
@@ -102,12 +70,6 @@
       "newDate": "2017-04-26T15:16:29.370Z",
       "QuestionId": 1,
       "id": 2
-    },
-    {
-      "body": "test",
-      "newDate": "2017-04-27T07:34:26.955Z",
-      "QuestionId": 1,
-      "id": 3
     }
   ],
   "Tags": [
