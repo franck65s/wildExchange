@@ -7,6 +7,7 @@ angular.module('app')
         angular.injector(['ngCookies']).invoke(['$cookies', function (_$cookies_) {
             $cookies = _$cookies_;
         }]);
+
         function VerificationConnection(userid, token) {
             if (!userid) {
                 DeleteCookie();
@@ -72,11 +73,20 @@ angular.module('app')
                 url: '/affiche/:id',
                 component: 'affichageReponse',
                 resolve: {
-                    reponses: function ($stateParams,$rootScope) {
-                      $rootScope.idQuestion = $stateParams.id;
+                    reponses: function ($stateParams, $rootScope) {
+                        $rootScope.idQuestion = $stateParams.id;
                     }
                 }
-            });
+            })
+            .state({
+                name: 'affichageprofil',
+                url: '/affichageprofil/:id',
+                component: 'affichageUser',
+                resolve: {
+                    user: function (displayUser, $stateParams) {
+                        return displayUser.afficherUser($stateParams.id);
 
+                    }
+                }
+            })
     })
-//  $urlRouterProvider.otherwise('/home)
