@@ -27,12 +27,10 @@
 			<h1>
 				<a ui-sref="home"><img src="../../../assets/img/logo_orange_pastille.png" alt="Logo_wild" height="42" width="42"></a>
 			</h1>
-			<!--<form method="get" action="#">-->
-				<input type="search" placeholder="Search!" ng-model="$ctrl.query" name="search">
-			</form>
+
 			<nav>
-				<a href="https://odyssey.wildcodeschool.fr/shares">Documentations</a>
-				<a href="#">Users</a>
+				<a href="https://odyssey.wildcodeschool.fr/shares">Documentation</a>
+				<a ui-sref="annuaire">Annuaire</a>
 				<ul>
 					<li>
 						<a ui-sref="formulaireQuestion">
@@ -56,26 +54,6 @@
 
 
 
-	<!-- script search -->
-
-	<script>
-		$(document).ready(function () {
-
-			$('.header-search form').on('click', function (e) {
-
-				if (e.target == this) {
-					$(this).find('input').toggle();
-				}
-
-			});
-		});
-	</script>
-	<!--se met tout le temps dans la page ou on veut mettre la route-->
-
-
-
-
-
 	<script src="app/app.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-cookies.js"></script>
 
@@ -88,6 +66,8 @@
 	<script src="services/AnswerService.js"></script>
 	<script src="services/signService.js"></script>
 	<script src="services/affichageUserservice.js"></script>
+	<script src="services/researchQservice.js"></script>
+	<script src="services/annuaireService.js"></script>
 
 	<script src="js/components/index.js"></script>
 	<script src="js/components/questions/affichagequestionComponent.js"></script>
@@ -98,7 +78,8 @@
 	<script src="js/components/user/sign/sign.js"></script>
 	<script src="js/components/user/registration/registration.js"></script>
 	<script src="js/components/user/profile/profilcomponent.js"></script>
-
+	<script src="js/components/research/researchQcomponent.js"></script>
+	<script src="js/components/annuaire/annuaire.js"></script>
 
 </body>
 
