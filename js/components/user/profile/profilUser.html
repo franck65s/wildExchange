@@ -1,0 +1,31 @@
+<h1>Profil nom user</h1>
+
+<div ng-if="$ctrl.edit == false">
+<p>{{$ctrl.users.nom}}</p>
+<p>{{$ctrl.users.prenom}}</p>
+<p>{{$ctrl.users.username}}</p>
+<p>{{$ctrl.users.MattermostName}}</p>
+<p>{{$ctrl.users.Age}}</p>
+<p>{{$ctrl.users.wcsWhere}}</p>
+<p>{{$ctrl.users.schoolPromo}}</p>
+<p>{{$ctrl.users.GitHubLink}}</p>
+<p>{{$ctrl.users.LinkedinLink}}</p></div>
+
+<div ng-if="$ctrl.edit == true">
+<input type="text" ng-model="$ctrl.settings.nom"  ng-value="{{$ctrl.users.prenom}}"  placeholder="entre ton nom"></p>
+<input type="text" ng-model="$ctrl.settings.prenom" placeholder="{{$ctrl.users.prenom}}"></p>
+<input type="text" ng-model="$ctrl.settings.username" placeholder="{{$ctrl.users.username}}"></p>
+<input type="text" ng-model="$ctrl.settings.MattermostName" placeholder="{{$ctrl.users.MattermostName}}"></p>
+<input type="text" ng-model="$ctrl.settings.Age" placeholder="{{$ctrl.users.Age}}"></p>
+<input type="text" ng-model="$ctrl.settings.wcsWhere" placeholder="{{$ctrl.users.wcsWhere}}"></p>
+<input type="text" ng-model="$ctrl.settings.schoolPromo" placeholder="{{$ctrl.users.schoolPromo}}"></p>
+<input type="text" ng-model="$ctrl.settings.GitHubLink" placeholder="{{$ctrl.users.GitHubLink}}"></p>
+<input type="text" ng-model="$ctrl.settings.LinkedinLink" placeholder="{{$ctrl.users.LinkedinLink}}"></p>
+
+<button ng-click="$ctrl.save()">save</button>
+
+
+</div>
+
+
+<button ng-click="$ctrl.editOnclick()">editer</button>

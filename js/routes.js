@@ -29,7 +29,6 @@ angular.module('app')
             $cookies.remove('id');
             $cookies.remove('tokenSecure');
             $window.location.href = '/#!/index';
-
         };
 
         $stateProvider
@@ -72,11 +71,26 @@ angular.module('app')
                 url: '/affiche/:id',
                 component: 'affichageReponse',
                 resolve: {
-                    reponses: function ($stateParams,$rootScope) {
-                      $rootScope.idQuestion = $stateParams.id;
+                    reponses: function ($stateParams, $rootScope) {
+                        $rootScope.idQuestion = $stateParams.id;
+                    }
+                }
+            })
+            .state({
+                name: 'profilUser',
+                url: '/user/:id',
+                component: 'profilUser',
+                resolve: {
+                    idUser: function ($stateParams, $rootScope) {
+                        $rootScope.idUser = $stateParams.id;
+                    },
+                    login: function ($cookies) {
+                        VerificationConnection($cookies.get('id'), $cookies.get('tokenSecure'));
                     }
                 }
             });
+            
+
 
     })
 //  $urlRouterProvider.otherwise('/home)
