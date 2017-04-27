@@ -1,21 +1,23 @@
 <ol>
-    <li ng-repeat="questionsReponse in $ctrl.result" id="liste">
-        <div id="titreQuestion">&nbsp;&nbsp;Question posée le {{questionsReponse.newDate | date : format : timezone}} </div>
+    <li ng-repeat="questionsReponse in $ctrl.result | filter : $ctrl.query" id="liste">
+        <div id="titreQuestion">&nbsp;&nbsp;Question posée le {{questionsReponse.newDate | date : format : timezone}} par <a ui-sref ="affichageprofil({id:questionsReponse.user.id})" >{{questionsReponse.user.prenom}}</a> </div>
         </br>
         <div>{{questionsReponse.titre | uppercase}}</div>
         <div id="titreQuestion">Objet de la Question </div>
         </br>
         <div>{{questionsReponse.body }}</div>
         </br>
-        <center>
-            <div id="repondre"> <input type="button" value="voir" ui-sref="afficheQuestion({id : questionsReponse.id})"></div>
+        <div id="repondre">
+            <input type="button" value="voir" ui-sref="afficheQuestion({id : questionsReponse.id})">
+        </div>
 
-            <ol>
-                <li ng-repeat="Answer in questionsReponse.Answers" id="titreQuestion">
+        <ol>
+            <li ng-repeat="Answer in questionsReponse.Answers" id="titreQuestion">
 
-                    <div> {{Answer.body}}</div>
-                </li>
-            </ol>
+                <div> {{Answer.body}}</div>
+            </li>
+        </ol>
+     
 
     </li>
 

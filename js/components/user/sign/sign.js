@@ -14,7 +14,7 @@ angular.module('components').component("inscription", {
 
         this.postReg = () => {
             this.add = {
-                name: this.userpost.name,
+                username: this.userpost.name,
                 mail: this.userpost.mail,
                 mdp: this.userpost.mdp
             }
