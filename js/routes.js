@@ -84,7 +84,20 @@ angular.module('app')
                 resolve: {
                     reponses: function ($stateParams, $rootScope) {
                         $rootScope.idQuestion = $stateParams.id;
-<<<<<<< HEAD
+
+
+                    }
+                }
+            })
+            
+            .state({
+                name: 'affichageprofil',
+                url: '/affichageprofil/:id',
+                component: 'affichageUser',
+                resolve: {
+                    user: function (displayUser, $stateParams) {
+                        return displayUser.afficherUser($stateParams.id);
+
                     }
                 }
             })
@@ -100,25 +113,14 @@ angular.module('app')
                         VerificationConnection($cookies.get('id'), $cookies.get('tokenSecure'));
                     }
                 }
-            });
+            });       
+              
+                
             
-
-=======
-                    }
-                }
-            })
-            
-            .state({
-                name: 'affichageprofil',
-                url: '/affichageprofil/:id',
-                component: 'affichageUser',
-                resolve: {
-                    user: function (displayUser, $stateParams) {
-                        return displayUser.afficherUser($stateParams.id);
->>>>>>> 138642a2426393010a872e82ac71d6685e7deeea
 
                     }
                 }
             })
+
             
     })

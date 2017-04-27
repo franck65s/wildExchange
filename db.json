@@ -15,7 +15,7 @@
       "signupDate": "01/01/2017",
       "lastConnection": "10/04/2017",
       "schoolId": 1,
-      "mdp":"toto",
+      "mdp": "toto",
       "tokenSecure": 4648646
     },
     {
@@ -34,8 +34,9 @@
       "lastConnection": "10/04/2017",
       "schoolId": 1
 
-    }  ,
-       {
+    },
+    {
+
       "id": 3,
       "username": "Estelle",
       "nom": "Rousset",
@@ -50,8 +51,9 @@
       "signupDate": "01/03/2017",
       "lastConnection": "25/04/2017",
       "schoolId": 1
-    } ,
-   {
+    },
+    {
+
       "id": 4,
       "username": "Nathanael",
       "nom": "Nathanael",
@@ -66,8 +68,10 @@
       "signupDate": "01/03/2017",
       "lastConnection": "29/04/2017",
       "schoolId": 1
-    } ,
-       {
+
+    },
+    {
+
       "id": 5,
       "username": "Franck",
       "nom": "Sabria",
@@ -82,8 +86,6 @@
       "signupDate": "01/02/2017",
       "lastConnection": "15/04/2017",
       "schoolId": 1
-    } 
-
   ],
   "Questions": [
     {
