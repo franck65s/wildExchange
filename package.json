@@ -16,8 +16,9 @@
     "url": "https://github.com/Mc-ronald33/wildExchange/issues"
   },
   "homepage": "https://github.com/Mc-ronald33/wildExchange#readme",
-  "dependencies": {
+    "dependencies": {
     "angular": "^1.6.4",
     "angular-ui-router": "^1.0.0-rc.1"
-  }
+
+}
 }
