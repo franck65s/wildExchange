@@ -84,7 +84,7 @@ angular.module('app')
                 resolve: {
                     reponses: function ($stateParams, $rootScope) {
                         $rootScope.idQuestion = $stateParams.id;
-<<<<<<< HEAD
+
                     }
                 }
             })
@@ -96,7 +96,6 @@ angular.module('app')
                 resolve: {
                     user: function (displayUser, $stateParams) {
                         return displayUser.afficherUser($stateParams.id);
-=======
                     }
                 }
             })
@@ -112,13 +111,9 @@ angular.module('app')
                         VerificationConnection($cookies.get('id'), $cookies.get('tokenSecure'));
                     }
                 }
-            });
+            });       
+              
+                
             
-
->>>>>>> master
-
-                    }
-                }
-            })
             
     })
