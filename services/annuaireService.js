@@ -1,7 +1,7 @@
 'use strict';
 
 
-const U = "http://localhost:3000/users";
+const B = "http://localhost:3000/users";
 
 angular.module('services')
 
@@ -9,7 +9,7 @@ angular.module('services')
     
 
     this.afficher = (annuaires) => {
-      return $http.get(U);
+      return $http.get(B);
 
     };
 

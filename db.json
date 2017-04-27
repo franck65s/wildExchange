@@ -67,6 +67,22 @@
       "schoolId": 1
     },
     {
+      "id": 6,
+      "username": "Nathanael",
+      "nom": "Nathanael",
+      "prenom": "nathanael",
+      "age": "25",
+      "email": "nathanael@gmail.com",
+      "gitHubLink": "http://github.com/nathanael",
+      "linkedinLink": "http://linkedin.com/nathanael",
+      "points": "20",
+      "mattermostName": "nathanael",
+      "promoId": 1,
+      "signupDate": "01/03/2017",
+      "lastConnection": "29/04/2017",
+      "schoolId": 1
+    },
+    {
       "id": 5,
       "username": "Franck",
       "nom": "Sabria",
