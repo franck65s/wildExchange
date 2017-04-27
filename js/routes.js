@@ -68,6 +68,16 @@ angular.module('app')
                 url: "/inscription",
                 component: "inscription"
             })
+             .state({
+                name: "researchQ",
+                url: "/researchQ",
+                component: "searchQ"
+            })
+              .state({
+                name: "annuaire",
+                url: "/annuaire",
+                component: "annuaire"
+            })
             .state({
                 name: 'afficheQuestion',
                 url: '/affiche/:id',
@@ -78,6 +88,7 @@ angular.module('app')
                     }
                 }
             })
+            
             .state({
                 name: 'affichageprofil',
                 url: '/affichageprofil/:id',
@@ -89,4 +100,5 @@ angular.module('app')
                     }
                 }
             })
+            
     })

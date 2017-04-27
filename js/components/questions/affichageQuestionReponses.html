@@ -1,5 +1,9 @@
+
+<input type="search" placeholder="Search!" ng-model="q" name="search">
+
 <ol>
-    <li ng-repeat="questionsReponse in $ctrl.result | filter : $ctrl.query" id="liste">
+
+    <li ng-repeat="questionsReponse in $ctrl.result | filter : q" id="liste">
         <div id="titreQuestion">&nbsp;&nbsp;Question posée le {{questionsReponse.newDate | date : format : timezone}} par <a ui-sref ="affichageprofil({id:questionsReponse.user.id})" >{{questionsReponse.user.prenom}}</a> </div>
         </br>
         <div>{{questionsReponse.titre | uppercase}}</div>
