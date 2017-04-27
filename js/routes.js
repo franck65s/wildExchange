@@ -118,9 +118,8 @@ angular.module('app')
                 
             
 
-                    }
-                }
-            })
+    })
+                
+            
 
             
-    })
