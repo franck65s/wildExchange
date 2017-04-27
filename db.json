@@ -1,143 +1,76 @@
 {
-  "Users": [
+  "users": [
     {
       "id": 1,
-      "username": "re noob",
-      "nom": "julien",
-      "prenom": "noob",
-      "Age": "kkk",
-      "wcsWhere": "kkk",
-      "schoolPromo": "kk",
+
+      "username": "Eric",
+      "nom": "cire",
+      "prenom": "Eric",
+      "age": "32",
       "email": "eric@gmail.com",
-      "GitHubLink": "kk",
-      "LinkedinLink": "kk",
-      "Points": "150",
-      "MattermostName": "kkk",
+      "gitHubLink": "http://github.com/Eric",
+      "linkedinLink": "http://linkedin.com/Eric",
+      "points": "150",
+      "mattermostName": "Eric",
       "promoId": 1,
-      "SignupDate": "01/01/2017",
-      "LastConnection": "10/04/2017",
-      "SchoolId": 1,
-      "tokenSecure": 4405.420142246886
+      "signupDate": "01/01/2017",
+      "lastConnection": "10/04/2017",
+      "schoolId": 1,
+      "mdp":"toto",
+      "tokenSecure": 4648646
     },
     {
-      "name": "toto",
-      "mail": "toto@gmail.com",
-      "mdp": "toto",
-      "id": 2
-    },
-    {
-      "name": "redo",
-      "mail": "der@hotmail.com",
-      "mdp": "ced",
-      "id": 3
-    },
-    {
-      "name": "tata",
-      "mail": "tata@gmail.com",
-      "mdp": "tata",
-      "id": 4
-    },
-    {
-      "name": "tyty",
-      "mdp": "eeez",
-      "id": 5
-    },
-    {
-      "name": "sdsdv",
-      "mail": "toddto@gmail.com",
-      "mdp": "azazazaz",
-      "id": 6
-    },
-    {
-      "name": "totoc",
-      "mail": "toto@gmail.com",
-      "mdp": "azazazaz",
-      "id": 7
-    },
-    {
-      "name": "dssdds",
-      "mdp": "ezfzzezef",
-      "id": 8
-    }
+      "id": 2,
+      "username": "Elisa",
+      "nom": "Campus",
+      "prenom": "Elisa",
+      "age": "18",
+      "email": "elisa@gmail.com",
+      "gitHubLink": "http://github.com/Elisa",
+      "linkedinLink": "http://linkedin.com/Elisa",
+      "points": "190",
+      "mattermostName": "Elisa",
+      "promoId": 1,
+      "signupDate": "01/02/2017",
+      "lastConnection": "10/04/2017",
+      "schoolId": 1
+    }   
   ],
   "Questions": [
     {
+      "titre": "Framework Javascript",
+      "body": "Quel framework me conseillez-vous?\nCordialement",
+      "newDate": "2017-04-24T14:04:48.576Z",
       "id": 1,
-      "titre": "utiliser AngularJS",
-      "body": "Faut il un Ordinateur?",
-      "newDate": "2017-04-14T07:54:23.488Z",
-      "UserId": 1,
-      "postId": 1
+      "userId": 1
     },
     {
-      "titre": "Utiliser un ordinateur",
-      "body": "Faut il Angularjs?",
-      "newDate": "2017-04-14T07:54:23.488Z",
-      "UserId": 1,
-      "id": 2
+      "titre": "Javascript",
+      "body": "Est ce différente de Java?",
+      "newDate": "2017-04-24T14:55:50.969Z",
+      "id": 2,
+      "userId": 2
     },
     {
-      "titre": "coucou",
-      "body": "coucouc",
-      "newDate": "2017-04-21T13:04:27.401Z",
-      "id": 3
-    },
-    {
-      "titre": "Salut à tous !",
-      "body": "Ouais coucou super",
-      "newDate": "2017-04-21T13:57:17.474Z",
-      "id": 4
-    },
-    {
-      "titre": "salut!!",
-      "body": "je pose une question!",
-      "newDate": "2017-04-24T08:26:47.294Z",
-      "id": 5
+      "titre": "Wifi",
+      "body": "Quel est le point d'accès?",
+      "newDate": "2017-04-24T14:56:59.654Z",
+      "id": 3,
+      "userId": 1
     }
   ],
   "Answers": [
     {
-      "id": 1,
-      "body": "Non il suffit d'avoir un boulier",
-      "UserId": 1,
-      "QuestionId": "1",
-      "name": "Toto"
+      "body": "Bonjour,\nJe vous conseille AngularJs",
+      "newDate": "2017-04-24T14:05:14.311Z",
+      "QuestionId": 1,
+      "id": 1
     },
     {
-      "body": "sdcsdcds",
-      "newDate": "2017-04-22T17:18:50.958Z",
-      "QuestionId": "4",
+      "body": "Bonjour, Je confirme mais envisagez de commencer au moins à la version 1.6",
+      "newDate": "2017-04-26T15:16:29.370Z",
+      "QuestionId": 1,
       "id": 2
-    },
-    {
-      "body": "ddsvds",
-      "newDate": "2017-04-22T17:29:01.415Z",
-      "QuestionId": 4,
-      "id": 3
-    },
-    {
-      "body": "ca marche noobi",
-      "newDate": "2017-04-22T17:29:15.809Z",
-      "QuestionId": 4,
-      "id": 4
-    },
-    {
-      "body": "fdfhghfg",
-      "newDate": "2017-04-24T08:25:42.449Z",
-      "QuestionId": 4,
-      "id": 5
-    },
-    {
-      "body": "je reponds!",
-      "newDate": "2017-04-24T08:25:55.698Z",
-      "QuestionId": 4,
-      "id": 6
-    },
-    {
-      "body": "heloo",
-      "newDate": "2017-04-24T10:37:34.394Z",
-      "QuestionId": 5,
-      "id": 7
     }
   ],
   "Tags": [
