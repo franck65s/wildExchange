@@ -99,11 +99,18 @@
       "schoolId": 1
     },
     {
-      "username": "franck",
-      "mail": "franck@gmail.com",
+      "username": "frederic",
+      "mail": "frederic@gmail.com",
       "mdp": "cyclope",
-      "id": 6,
-      "tokenSecure": 5118.198049622751
+      "id": 7,
+      "tokenSecure": 1248.149353380247
+    },
+    {
+      "username": "julien",
+      "mail": "julien@gmail.com",
+      "mdp": "ju",
+      "id": 8,
+      "tokenSecure": 1117.46899151311
     }
   ],
   "Questions": [
@@ -127,12 +134,6 @@
       "newDate": "2017-04-24T14:56:59.654Z",
       "id": 3,
       "userId": 1
-    },
-    {
-      "titre": "vpefklgvpelbgpkopkopk",
-      "body": "oplopklopklopkopkloklok",
-      "newDate": "2017-04-27T15:39:44.021Z",
-      "id": 4
     }
   ],
   "Answers": [
