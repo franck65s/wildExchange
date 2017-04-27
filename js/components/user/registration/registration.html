@@ -18,10 +18,7 @@
                                     <label for="password" class="youpasswd"> Ton mot de passe </label>
                                     <input  ng-model="$ctrl.connexion.mdp"  id="password" name="password" required="required" type="password"/> 
                                 </p>
-                                <p class="keeplogin"> 
-									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
-									<label for="loginkeeping">Resté connecté</label>
-								</p>
+                           
                                 <p class="login button"> 
                                     <input ng-click="$ctrl.connection($ctrl.connexion.user,$ctrl.connexion.mdp)" type="submit" value="Connexion" /> 
 								</p>
@@ -47,10 +44,7 @@
                                     <label for="passwordsignup" class="youpasswd" >Ton mot de passe </label>
                                     <input  ng-model="$ctrl.userpost.mdp" id="passwordsignup" name="passwordsignup" required="required" type="password"/>
                                 </p>
-                                <p> 
-                                    <label for="passwordsignup_confirm" lass="youpasswd" >Confirme ton mot de passe </label>
-                                    <input  ng-model="$ctrl.userpost.mdp" cid="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password"/>
-                                </p>
+                             
                                 <p class="signin button"> 
 									<input ng-click="$ctrl.postReg()" type="submit" value="Inscription"/> 
 								</p>
