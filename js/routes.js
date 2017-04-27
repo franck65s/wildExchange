@@ -85,6 +85,7 @@ angular.module('app')
                     reponses: function ($stateParams, $rootScope) {
                         $rootScope.idQuestion = $stateParams.id;
 
+
                     }
                 }
             })
@@ -96,6 +97,7 @@ angular.module('app')
                 resolve: {
                     user: function (displayUser, $stateParams) {
                         return displayUser.afficherUser($stateParams.id);
+
                     }
                 }
             })
@@ -115,5 +117,10 @@ angular.module('app')
               
                 
             
+
+                    }
+                }
+            })
+
             
     })
