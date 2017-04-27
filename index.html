@@ -60,6 +60,37 @@
 
 
 
+	<header class="header-search">
+		<div class="header-limiter">
+			<h1>
+				<a ui-sref="home"><img src="../../../assets/img/logo_orange_pastille.png" alt="Logo_wild" height="42" width="42"></a>
+			</h1>
+
+			<nav>
+				<a href="https://odyssey.wildcodeschool.fr/shares">Documentation</a>
+				<a ui-sref="annuaire">Annuaire</a>
+				<ul>
+					<li>
+						<a ui-sref="formulaireQuestion">
+							<font color="white">Ask question</font>
+						</a>
+					</li>
+					<li>
+						<a ui-sref="index">
+							<font color="white">Connexion</font>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+	</header>
+
+
+	<ui-view></ui-view>
+
+
+
 
 	<script src="app/app.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-cookies.js"></script>
@@ -72,10 +103,16 @@
 	<script src="services/serviceQuestionReponses.js"></script>
 	<script src="services/AnswerService.js"></script>
 	<script src="services/signService.js"></script>
+
 	<script src="services/affichageUserservice.js"></script>
 	<script src="services/researchQservice.js"></script>
 	<script src="services/annuaireService.js"></script>
+
 	<script src="services/profilService.js"></script>
+
+	<script src="services/affichageUserservice.js"></script>
+	<script src="services/researchQservice.js"></script>
+	<script src="services/annuaireService.js"></script>
 
 	<script src="js/components/index.js"></script>
 	<script src="js/components/questions/affichagequestionComponent.js"></script>
@@ -85,12 +122,17 @@
 	<script src="js/components/answers/answerComponent.js"></script> 
 	<script src="js/components/user/sign/sign.js"></script>
 	<script src="js/components/user/registration/registration.js"></script>
+
 	<script src="js/components/user/profile/profilcomponent.js"></script>
 	<script src="js/components/research/researchQcomponent.js"></script>
 	<script src="js/components/annuaire/annuaire.js"></script>
+
 	<script src="js/components/user/profile/profilUser.js"></script>
 	<script src="js/components/main/main.js"></script>
 
+	<script src="js/components/user/profile/profilcomponent.js"></script>
+	<script src="js/components/research/researchQcomponent.js"></script>
+	<script src="js/components/annuaire/annuaire.js"></script>
 
 
 </body>

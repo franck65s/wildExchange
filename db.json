@@ -33,8 +33,10 @@
       "signupDate": "01/02/2017",
       "lastConnection": "10/04/2017",
       "schoolId": 1
+
     },
     {
+
       "id": 3,
       "username": "Estelle",
       "nom": "Rousset",
@@ -51,6 +53,7 @@
       "schoolId": 1
     },
     {
+
       "id": 4,
       "username": "Nathanael",
       "nom": "Nathanael",
@@ -65,8 +68,10 @@
       "signupDate": "01/03/2017",
       "lastConnection": "29/04/2017",
       "schoolId": 1
+
     },
     {
+
       "id": 5,
       "username": "Franck",
       "nom": "Sabria",
@@ -81,14 +86,6 @@
       "signupDate": "01/02/2017",
       "lastConnection": "15/04/2017",
       "schoolId": 1
-    },
-    {
-      "username": "franck",
-      "mail": "franck@gmail.com",
-      "mdp": "cyclope",
-      "id": 6,
-      "tokenSecure": 5118.198049622751
-    }
   ],
   "Questions": [
     {
@@ -97,8 +94,7 @@
       "newDate": "2017-04-24T14:04:48.576Z",
       "id": 1,
       "userId": 1
-    },
-    {
+    },   {
       "titre": "Javascript",
       "body": "Est ce différent de Java?",
       "newDate": "2017-04-24T14:55:50.969Z",
