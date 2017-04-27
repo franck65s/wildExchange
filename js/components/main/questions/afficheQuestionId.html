@@ -1,0 +1,23 @@
+
+        <div id="titreQuestion">Question posée le {{$ctrl.result.newDate | date : format : timezone}} </div>
+        </br>
+        <!--<div>{{$ctrl.result | uppercase}}</div>-->
+        </br>
+        <div id="titreContenu">Contenu</div>
+        
+         <div>{{$ctrl.result.titre}}</div> 
+         <div>{{$ctrl.result.body}}</div>
+        </br>
+        <div>{{$ctrl.result.body}}</div>
+        </br>
+          <div id="titreContenu">réponse</div>
+        </br>
+        <ol>
+            <li ng-repeat="answer in $ctrl.reponse.Answers" id="titreQuestion">
+
+                <div> {{answer.body}}</div>
+                <div id="repondre"> <input type="button" value="REPONDRE"></div>
+            </li>
+        </ol>
+  <div>REPONDRE</div>
+ <create-answer></create-answer>
