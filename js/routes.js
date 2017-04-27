@@ -7,6 +7,7 @@ angular.module('app')
         angular.injector(['ngCookies']).invoke(['$cookies', function (_$cookies_) {
             $cookies = _$cookies_;
         }]);
+
         function VerificationConnection(userid, token) {
             if (!userid) {
                 DeleteCookie();
@@ -66,6 +67,16 @@ angular.module('app')
                 url: "/inscription",
                 component: "inscription"
             })
+             .state({
+                name: "researchQ",
+                url: "/researchQ",
+                component: "searchQ"
+            })
+              .state({
+                name: "annuaire",
+                url: "/annuaire",
+                component: "annuaire"
+            })
             .state({
                 name: 'afficheQuestion',
                 url: '/affiche/:id',
@@ -73,6 +84,7 @@ angular.module('app')
                 resolve: {
                     reponses: function ($stateParams, $rootScope) {
                         $rootScope.idQuestion = $stateParams.id;
+<<<<<<< HEAD
                     }
                 }
             })
@@ -91,6 +103,22 @@ angular.module('app')
             });
             
 
+=======
+                    }
+                }
+            })
+            
+            .state({
+                name: 'affichageprofil',
+                url: '/affichageprofil/:id',
+                component: 'affichageUser',
+                resolve: {
+                    user: function (displayUser, $stateParams) {
+                        return displayUser.afficherUser($stateParams.id);
+>>>>>>> 138642a2426393010a872e82ac71d6685e7deeea
 
+                    }
+                }
+            })
+            
     })
-//  $urlRouterProvider.otherwise('/home)

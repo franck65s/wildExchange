@@ -12,7 +12,7 @@ angular.module('services')
       $http.post(API_URL, questions)
         .then((response) => {
           var data = response.data;
-
+    
         });
 
     }

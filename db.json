@@ -2,7 +2,6 @@
   "users": [
     {
       "id": 1,
-
       "username": "Eric",
       "nom": "cire",
       "prenom": "Eric",
@@ -34,7 +33,57 @@
       "signupDate": "01/02/2017",
       "lastConnection": "10/04/2017",
       "schoolId": 1
-    }   
+
+    }  ,
+       {
+      "id": 3,
+      "username": "Estelle",
+      "nom": "Rousset",
+      "prenom": "Estelle",
+      "age": "19",
+      "email": "estelle@gmail.com",
+      "gitHubLink": "http://github.com/Estelle",
+      "linkedinLink": "http://linkedin.com/Estelle",
+      "points": "250",
+      "mattermostName": "Estelle",
+      "promoId": 1,
+      "signupDate": "01/03/2017",
+      "lastConnection": "25/04/2017",
+      "schoolId": 1
+    } ,
+   {
+      "id": 4,
+      "username": "Nathanael",
+      "nom": "Nathanael",
+      "prenom": "nathanael",
+      "age": "25",
+      "email": "nathanael@gmail.com",
+      "gitHubLink": "http://github.com/nathanael",
+      "linkedinLink": "http://linkedin.com/nathanael",
+      "points": "20",
+      "mattermostName": "nathanael",
+      "promoId": 1,
+      "signupDate": "01/03/2017",
+      "lastConnection": "29/04/2017",
+      "schoolId": 1
+    } ,
+       {
+      "id": 5,
+      "username": "Franck",
+      "nom": "Sabria",
+      "prenom": "Franck",
+      "age": "25",
+      "email": "franck@gmail.com",
+      "gitHubLink": "http://github.com/franck",
+      "linkedinLink": "http://linkedin.com/franck",
+      "points": "20",
+      "mattermostName": "franck",
+      "promoId": 1,
+      "signupDate": "01/02/2017",
+      "lastConnection": "15/04/2017",
+      "schoolId": 1
+    } 
+
   ],
   "Questions": [
     {
@@ -43,10 +92,9 @@
       "newDate": "2017-04-24T14:04:48.576Z",
       "id": 1,
       "userId": 1
-    },
-    {
+    },   {
       "titre": "Javascript",
-      "body": "Est ce différente de Java?",
+      "body": "Est ce différent de Java?",
       "newDate": "2017-04-24T14:55:50.969Z",
       "id": 2,
       "userId": 2
@@ -71,6 +119,18 @@
       "newDate": "2017-04-26T15:16:29.370Z",
       "QuestionId": 1,
       "id": 2
+    },
+    {
+      "body": "Bonjour,\ntout à fait les deux langages sont différents",
+      "newDate": "2017-04-24T14:05:14.311Z",
+      "QuestionId": 2,
+      "id": 3
+    },
+    {
+      "body": "Bonjour, wildbdx2",
+      "newDate": "2017-04-26T15:16:29.370Z",
+      "QuestionId": 3,
+      "id": 4
     }
   ],
   "Tags": [

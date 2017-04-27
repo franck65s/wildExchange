@@ -1,0 +1,29 @@
+<div>RECHERCHER UN MEMBRE</div>
+
+<input type="search" placeholder="Search!" ng-model="q" name="search">
+
+<ol>
+
+    <li ng-repeat="user in $ctrl.annu | filter : q" id="liste">
+        </br>
+
+
+        <div>le profil de {{user.prenom}}</div>
+        <div>Nom: {{user.nom}}</div>
+        <div>Prénom: {{user.prenom}}</div>
+        <div>Age: {{user.age}}</div>
+        <div>Mail: {{user.email}}</div>
+        <div>Github: {{user.gitHubLink}}</div>
+        <div>Linkedin: {{user.linkedinLink}}</div>
+        <div>Points: {{user.points}}</div>
+        <div>Mattermost: {{user.mattermostName}}</div>
+        <div>Inscription: {{user.signupDate}}</div>
+        <div>Dernière connection : {{user.lastConnection}}</div>
+
+
+
+        </br>
+
+    </li>
+
+</ol>
